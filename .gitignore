@@ -7,6 +7,7 @@ Unity/[Bb]uild/
 Unity/[Bb]uilds/
 Unity/.vs/
 Unity/.idea/
+Unity/.utmp/
 Unity/*.csproj
 Unity/*.sln*
 Unity/*.pidb
@@ -17,6 +18,8 @@ Unity/MemoryCaptures/
 Unity/Recordings/
 Unity/Assets/Resources/DevAgentSettings.asset*
 Unity/Assets/InitTestScene*.unity*
+Unity/Assets/Resources/PerformanceTestRun*.json*
+Unity/Assets/StreamingAssets/RuntimeActionBindings.json*
 Builds/
 Art/*.blend[0-9]*
 Art/Donor/*.zip

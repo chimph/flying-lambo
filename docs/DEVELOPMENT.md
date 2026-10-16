@@ -34,6 +34,8 @@ The Xbox View/F1 preference is saved between sessions. Hidden mode disables all 
 
 Choose **Flying Lambo → Build Quest APK** for a regular build, or **Build development Quest APK** for a development build. Both write `Builds/FlyingLambo.apk` at the repository root. `Assets/AstroQuest/Scenes/QuestMR.unity` is the headset scene.
 
+Regular builds disable the Meta DevAgent and clear its local connection settings after the SDK's build processor runs. Development builds retain those settings for local tooling. Generated DevAgent settings, test resources and build caches are excluded from Git.
+
 Close the interactive Editor before using the command-line scripts:
 
 ```sh
