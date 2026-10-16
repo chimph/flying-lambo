@@ -1,0 +1,6 @@
+{
+  "name": "AstroQuest.PlayModeTests",
+  "references": ["AstroQuest"],
+  "optionalUnityReferences": ["TestAssemblies"],
+  "defineConstraints": ["UNITY_INCLUDE_TESTS"]
+}

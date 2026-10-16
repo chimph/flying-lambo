@@ -1,0 +1,6 @@
+{
+  "name": "AstroQuest",
+  "rootNamespace": "AstroQuest",
+  "references": ["Unity.InputSystem", "Oculus.VR", "meta.xr.mrutilitykit"],
+  "autoReferenced": true
+}

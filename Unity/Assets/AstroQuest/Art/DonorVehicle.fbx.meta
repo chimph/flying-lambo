@@ -1,0 +1,751 @@
+fileFormatVersion: 2
+guid: fd3758ca536c64eb481fc21ac8dfd56d
+ModelImporter:
+  serializedVersion: 24600
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraHD_BrakeSteel
+    second: {fileID: 2100000, guid: 4ec377f838d1b41f3871ce21a40be24b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraHD_BrakeSteel.001
+    second: {fileID: 2100000, guid: 4ec377f838d1b41f3871ce21a40be24b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraHD_BrakeSteel.002
+    second: {fileID: 2100000, guid: 4ec377f838d1b41f3871ce21a40be24b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraHD_BrakeSteel.004
+    second: {fileID: 2100000, guid: 4ec377f838d1b41f3871ce21a40be24b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraHD_BrakeSteel.006
+    second: {fileID: 2100000, guid: 4ec377f838d1b41f3871ce21a40be24b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraHD_Caliper
+    second: {fileID: 2100000, guid: e0c9c54d0c10e41d29ab85883c59c1c6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraHD_Caliper.001
+    second: {fileID: 2100000, guid: e0c9c54d0c10e41d29ab85883c59c1c6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraHD_Caliper.002
+    second: {fileID: 2100000, guid: e0c9c54d0c10e41d29ab85883c59c1c6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraHD_Caliper.004
+    second: {fileID: 2100000, guid: e0c9c54d0c10e41d29ab85883c59c1c6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraHD_Caliper.006
+    second: {fileID: 2100000, guid: e0c9c54d0c10e41d29ab85883c59c1c6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraHD_CoolingBlade
+    second: {fileID: 2100000, guid: a3992888fc92f4785af071f6fc7334de, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraHD_CoolingBlade.002
+    second: {fileID: 2100000, guid: a3992888fc92f4785af071f6fc7334de, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraHD_ForgedAlloy
+    second: {fileID: 2100000, guid: cd3ee745e93ae4a8b81ddeefc948c6e4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraHD_ForgedAlloy.001
+    second: {fileID: 2100000, guid: cd3ee745e93ae4a8b81ddeefc948c6e4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraHD_ForgedAlloy.002
+    second: {fileID: 2100000, guid: cd3ee745e93ae4a8b81ddeefc948c6e4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraHD_ForgedAlloy.004
+    second: {fileID: 2100000, guid: cd3ee745e93ae4a8b81ddeefc948c6e4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraHD_ForgedAlloy.006
+    second: {fileID: 2100000, guid: cd3ee745e93ae4a8b81ddeefc948c6e4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraHD_GrilleMetal.001
+    second: {fileID: 2100000, guid: 3fa27eef9a2ad4328a8aa3d9641325af, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraHD_GrilleMetal.003
+    second: {fileID: 2100000, guid: 3fa27eef9a2ad4328a8aa3d9641325af, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraHD_HeadlightLED
+    second: {fileID: 2100000, guid: 6fc99b686b442454ebec4bd0d8be70c0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraHD_HeadlightLED.001
+    second: {fileID: 2100000, guid: 6fc99b686b442454ebec4bd0d8be70c0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraHD_HeadlightLED.002
+    second: {fileID: 2100000, guid: 6fc99b686b442454ebec4bd0d8be70c0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraHD_HeadlightLED.004
+    second: {fileID: 2100000, guid: 6fc99b686b442454ebec4bd0d8be70c0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraHD_HeadlightLED.006
+    second: {fileID: 2100000, guid: 6fc99b686b442454ebec4bd0d8be70c0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraHD_PanelGap.001
+    second: {fileID: 2100000, guid: b3ee8f05e065b44819d0582ea13210a2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraHD_PearlPaint
+    second: {fileID: 2100000, guid: 9ba9ef809e77f4138b117d722bc4bce8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraHD_PearlPaint.002
+    second: {fileID: 2100000, guid: 9ba9ef809e77f4138b117d722bc4bce8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraHD_PearlPaint.004
+    second: {fileID: 2100000, guid: 9ba9ef809e77f4138b117d722bc4bce8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraHD_PolishedLip
+    second: {fileID: 2100000, guid: 79dff66381dc642cfb07e9453f75cece, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraHD_PolishedLip.001
+    second: {fileID: 2100000, guid: 79dff66381dc642cfb07e9453f75cece, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraHD_PolishedLip.002
+    second: {fileID: 2100000, guid: 79dff66381dc642cfb07e9453f75cece, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraHD_PolishedLip.004
+    second: {fileID: 2100000, guid: 79dff66381dc642cfb07e9453f75cece, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraHD_PolishedLip.006
+    second: {fileID: 2100000, guid: 79dff66381dc642cfb07e9453f75cece, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraHD_Rubber
+    second: {fileID: 2100000, guid: 3923f7c2a2e6d4118b8d4fe27f374f3a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraHD_Rubber.001
+    second: {fileID: 2100000, guid: 3923f7c2a2e6d4118b8d4fe27f374f3a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraHD_Rubber.002
+    second: {fileID: 2100000, guid: 3923f7c2a2e6d4118b8d4fe27f374f3a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraHD_Rubber.004
+    second: {fileID: 2100000, guid: 3923f7c2a2e6d4118b8d4fe27f374f3a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraHD_Rubber.006
+    second: {fileID: 2100000, guid: 3923f7c2a2e6d4118b8d4fe27f374f3a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraHD_SatinCarbon
+    second: {fileID: 2100000, guid: a80bac6482e574fe4b8351a97cda5029, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraHD_SatinCarbon.001
+    second: {fileID: 2100000, guid: a80bac6482e574fe4b8351a97cda5029, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraHD_SatinCarbon.002
+    second: {fileID: 2100000, guid: a80bac6482e574fe4b8351a97cda5029, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraHD_SatinCarbon.004
+    second: {fileID: 2100000, guid: a80bac6482e574fe4b8351a97cda5029, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraHD_SatinCarbon.006
+    second: {fileID: 2100000, guid: a80bac6482e574fe4b8351a97cda5029, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraHD_SmokedGlass
+    second: {fileID: 2100000, guid: f38625bef6b9a4842ac59a67e78c0ab3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraHD_SmokedGlass.001
+    second: {fileID: 2100000, guid: f38625bef6b9a4842ac59a67e78c0ab3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraHD_SmokedGlass.002
+    second: {fileID: 2100000, guid: f38625bef6b9a4842ac59a67e78c0ab3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraHD_SmokedGlass.004
+    second: {fileID: 2100000, guid: f38625bef6b9a4842ac59a67e78c0ab3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraHD_SmokedGlass.006
+    second: {fileID: 2100000, guid: f38625bef6b9a4842ac59a67e78c0ab3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraHD_TailLED
+    second: {fileID: 2100000, guid: c2a826d7fa3724dcdba88d6ab0009efe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraHD_TailLED.001
+    second: {fileID: 2100000, guid: c2a826d7fa3724dcdba88d6ab0009efe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraHD_TailLED.002
+    second: {fileID: 2100000, guid: c2a826d7fa3724dcdba88d6ab0009efe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraHD_TailLED.004
+    second: {fileID: 2100000, guid: c2a826d7fa3724dcdba88d6ab0009efe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraHD_TailLED.006
+    second: {fileID: 2100000, guid: c2a826d7fa3724dcdba88d6ab0009efe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraHD_ThrusterRing
+    second: {fileID: 2100000, guid: f9211d55a1dd6472e8418ad65fde3504, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraHD_ThrusterRing.001
+    second: {fileID: 2100000, guid: f9211d55a1dd6472e8418ad65fde3504, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraHD_ThrusterRing.002
+    second: {fileID: 2100000, guid: f9211d55a1dd6472e8418ad65fde3504, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraHD_ThrusterRing.004
+    second: {fileID: 2100000, guid: f9211d55a1dd6472e8418ad65fde3504, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraHD_ThrusterRing.006
+    second: {fileID: 2100000, guid: f9211d55a1dd6472e8418ad65fde3504, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraLP640_Body
+    second: {fileID: 2100000, guid: 9ba9ef809e77f4138b117d722bc4bce8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraLP640_Body.001
+    second: {fileID: 2100000, guid: 9ba9ef809e77f4138b117d722bc4bce8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraLP640_Body.002
+    second: {fileID: 2100000, guid: 9ba9ef809e77f4138b117d722bc4bce8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraLP640_BrakeDisc
+    second: {fileID: 2100000, guid: 3139bcb15ba0a4204ba941b9538c5936, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraLP640_BrakeDisc.001
+    second: {fileID: 2100000, guid: 3139bcb15ba0a4204ba941b9538c5936, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraLP640_BrakeDisc.002
+    second: {fileID: 2100000, guid: 3139bcb15ba0a4204ba941b9538c5936, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraLP640_BrakeDisc.003
+    second: {fileID: 2100000, guid: 3139bcb15ba0a4204ba941b9538c5936, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraLP640_BrakeDisc.005
+    second: {fileID: 2100000, guid: 3139bcb15ba0a4204ba941b9538c5936, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraLP640_BrakeDisc.007
+    second: {fileID: 2100000, guid: 3139bcb15ba0a4204ba941b9538c5936, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraLP640_Caliper
+    second: {fileID: 2100000, guid: 1d5f9bcb4ba754497b82b3c79cc9b2e1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraLP640_Caliper.001
+    second: {fileID: 2100000, guid: 1d5f9bcb4ba754497b82b3c79cc9b2e1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraLP640_Caliper.002
+    second: {fileID: 2100000, guid: 1d5f9bcb4ba754497b82b3c79cc9b2e1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraLP640_Caliper.003
+    second: {fileID: 2100000, guid: 1d5f9bcb4ba754497b82b3c79cc9b2e1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraLP640_Caliper.005
+    second: {fileID: 2100000, guid: 1d5f9bcb4ba754497b82b3c79cc9b2e1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraLP640_Caliper.007
+    second: {fileID: 2100000, guid: 1d5f9bcb4ba754497b82b3c79cc9b2e1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraLP640_Carbon
+    second: {fileID: 2100000, guid: a5bce588cb6684aeda3c80c9e925086e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraLP640_Carbon.001
+    second: {fileID: 2100000, guid: a5bce588cb6684aeda3c80c9e925086e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraLP640_Carbon.002
+    second: {fileID: 2100000, guid: a5bce588cb6684aeda3c80c9e925086e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraLP640_Carbon.003
+    second: {fileID: 2100000, guid: a5bce588cb6684aeda3c80c9e925086e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraLP640_Carbon.005
+    second: {fileID: 2100000, guid: a5bce588cb6684aeda3c80c9e925086e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraLP640_Carbon.007
+    second: {fileID: 2100000, guid: a5bce588cb6684aeda3c80c9e925086e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraLP640_Details
+    second: {fileID: 2100000, guid: 2ad86bea545674e2cbda7fac5d744ab9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraLP640_Details.001
+    second: {fileID: 2100000, guid: 2ad86bea545674e2cbda7fac5d744ab9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraLP640_Details.002
+    second: {fileID: 2100000, guid: 2ad86bea545674e2cbda7fac5d744ab9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraLP640_Details.003
+    second: {fileID: 2100000, guid: 2ad86bea545674e2cbda7fac5d744ab9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraLP640_Details.005
+    second: {fileID: 2100000, guid: 2ad86bea545674e2cbda7fac5d744ab9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraLP640_Details.007
+    second: {fileID: 2100000, guid: 2ad86bea545674e2cbda7fac5d744ab9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraLP640_FrontWheel
+    second: {fileID: 2100000, guid: 0acc20aee0c95414e9e31ec542224d95, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraLP640_FrontWheel.001
+    second: {fileID: 2100000, guid: 0acc20aee0c95414e9e31ec542224d95, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraLP640_FrontWheel.002
+    second: {fileID: 2100000, guid: 0acc20aee0c95414e9e31ec542224d95, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraLP640_FrontWheel.003
+    second: {fileID: 2100000, guid: 0acc20aee0c95414e9e31ec542224d95, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraLP640_FrontWheel.005
+    second: {fileID: 2100000, guid: 0acc20aee0c95414e9e31ec542224d95, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraLP640_FrontWheel.007
+    second: {fileID: 2100000, guid: 0acc20aee0c95414e9e31ec542224d95, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraLP640_Glass
+    second: {fileID: 2100000, guid: 13a24334a02584b2ab4f3d50406ed300, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraLP640_Glass.001
+    second: {fileID: 2100000, guid: 13a24334a02584b2ab4f3d50406ed300, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraLP640_Glass.002
+    second: {fileID: 2100000, guid: 13a24334a02584b2ab4f3d50406ed300, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraLP640_Glass.003
+    second: {fileID: 2100000, guid: 13a24334a02584b2ab4f3d50406ed300, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraLP640_Glass.005
+    second: {fileID: 2100000, guid: 13a24334a02584b2ab4f3d50406ed300, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraLP640_Glass.007
+    second: {fileID: 2100000, guid: 13a24334a02584b2ab4f3d50406ed300, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraLP640_RearWheel
+    second: {fileID: 2100000, guid: f4af533053a3e4b79bedaee0381f6994, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraLP640_RearWheel.001
+    second: {fileID: 2100000, guid: f4af533053a3e4b79bedaee0381f6994, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraLP640_RearWheel.002
+    second: {fileID: 2100000, guid: f4af533053a3e4b79bedaee0381f6994, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraLP640_RearWheel.003
+    second: {fileID: 2100000, guid: f4af533053a3e4b79bedaee0381f6994, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraLP640_RearWheel.005
+    second: {fileID: 2100000, guid: f4af533053a3e4b79bedaee0381f6994, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraLP640_RearWheel.007
+    second: {fileID: 2100000, guid: f4af533053a3e4b79bedaee0381f6994, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraLP640_TailLamp
+    second: {fileID: 2100000, guid: 48d565ea3d0b84fef99b09f0064dd548, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraLP640_TailLamp.001
+    second: {fileID: 2100000, guid: 48d565ea3d0b84fef99b09f0064dd548, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraLP640_TailLamp.002
+    second: {fileID: 2100000, guid: 48d565ea3d0b84fef99b09f0064dd548, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraLP640_TailLamp.003
+    second: {fileID: 2100000, guid: 48d565ea3d0b84fef99b09f0064dd548, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraLP640_TailLamp.005
+    second: {fileID: 2100000, guid: 48d565ea3d0b84fef99b09f0064dd548, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraLP640_TailLamp.007
+    second: {fileID: 2100000, guid: 48d565ea3d0b84fef99b09f0064dd548, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraLP640_ThrusterCore
+    second: {fileID: 2100000, guid: bd663cb6e4c6c45869b1b4b5d79af140, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraLP640_ThrusterCore.001
+    second: {fileID: 2100000, guid: bd663cb6e4c6c45869b1b4b5d79af140, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraLP640_ThrusterCore.002
+    second: {fileID: 2100000, guid: bd663cb6e4c6c45869b1b4b5d79af140, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraLP640_ThrusterCore.003
+    second: {fileID: 2100000, guid: bd663cb6e4c6c45869b1b4b5d79af140, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraLP640_ThrusterCore.005
+    second: {fileID: 2100000, guid: bd663cb6e4c6c45869b1b4b5d79af140, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraLP640_ThrusterCore.007
+    second: {fileID: 2100000, guid: bd663cb6e4c6c45869b1b4b5d79af140, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraLP640_ThrusterHousing
+    second: {fileID: 2100000, guid: 16fcac284b9c04f999f22d709b5c7d89, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraLP640_ThrusterHousing.001
+    second: {fileID: 2100000, guid: 16fcac284b9c04f999f22d709b5c7d89, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraLP640_ThrusterHousing.002
+    second: {fileID: 2100000, guid: 16fcac284b9c04f999f22d709b5c7d89, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraLP640_ThrusterHousing.003
+    second: {fileID: 2100000, guid: 16fcac284b9c04f999f22d709b5c7d89, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraLP640_ThrusterHousing.005
+    second: {fileID: 2100000, guid: 16fcac284b9c04f999f22d709b5c7d89, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraLP640_ThrusterHousing.007
+    second: {fileID: 2100000, guid: 16fcac284b9c04f999f22d709b5c7d89, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraLP640_ThrusterRim
+    second: {fileID: 2100000, guid: bc2979706fc6d4241851a1d52799f23b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraLP640_ThrusterRim.001
+    second: {fileID: 2100000, guid: bc2979706fc6d4241851a1d52799f23b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraLP640_ThrusterRim.002
+    second: {fileID: 2100000, guid: bc2979706fc6d4241851a1d52799f23b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraLP640_ThrusterRim.003
+    second: {fileID: 2100000, guid: bc2979706fc6d4241851a1d52799f23b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraLP640_ThrusterRim.005
+    second: {fileID: 2100000, guid: bc2979706fc6d4241851a1d52799f23b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AstraLP640_ThrusterRim.007
+    second: {fileID: 2100000, guid: bc2979706fc6d4241851a1d52799f23b, type: 2}
+  materials:
+    materialImportMode: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+    searchTexturesGlobally: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    preBakeConvexCollisionMesh: 0
+    preBakeTriangleCollisionMesh: 0
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    generateMeshLods: 0
+    meshLodGenerationFlags: 0
+    maximumMeshLod: -1
+    importUVs: -1
+    importVertexColors: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+    calculateBlendshapeNormalsDeltaFromImportedNormals: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

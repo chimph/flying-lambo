@@ -1,0 +1,698 @@
+{
+  "author": "Ajay Gawde",
+  "license": "CC BY 4.0",
+  "sourceUrl": "https://sketchfab.com/3d-models/lamborghini-murcielago-lp-640-low-poly-1822aaadc6f34060a38ddf46f0c84ec3",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "materials": [
+    {
+      "sourceName": "AstraLP640_RearWheel.007",
+      "assetName": "LamboRearWheel",
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "metallic": 0.2,
+      "smoothness": 0.45,
+      "albedo": "Assets/AstroQuest/Art/DonorTextures/Rear_wheel_LP_Rear_Wheel_BaseColor.png",
+      "normal": "Assets/AstroQuest/Art/DonorTextures/Rear_wheel_LP_Rear_Wheel_Normal.png",
+      "emission": "Assets/AstroQuest/Art/DonorTextures/Rear_wheel_LP_Rear_Wheel_Emissive.png",
+      "paintMask": false
+    },
+    {
+      "sourceName": "AstraLP640_Caliper.007",
+      "assetName": "LamboCaliper",
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "metallic": 0.2,
+      "smoothness": 0.45,
+      "albedo": "Assets/AstroQuest/Art/DonorTextures/Caliper_Break_Red_BaseColor.png",
+      "normal": "Assets/AstroQuest/Art/DonorTextures/Caliper_Break_Red_Normal.png",
+      "emission": "Assets/AstroQuest/Art/DonorTextures/Caliper_Break_Red_Emissive.png",
+      "paintMask": false
+    },
+    {
+      "sourceName": "AstraLP640_BrakeDisc.007",
+      "assetName": "LamboBrakeDisc",
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "metallic": 0.2,
+      "smoothness": 0.45,
+      "albedo": "Assets/AstroQuest/Art/DonorTextures/Texture.jpg",
+      "normal": "",
+      "emission": "",
+      "paintMask": false
+    },
+    {
+      "sourceName": "AstraLP640_Glass.007",
+      "assetName": "LamboGlass",
+      "color": [
+        0.015,
+        0.04,
+        0.055,
+        1
+      ],
+      "metallic": 0.35,
+      "smoothness": 0.8,
+      "albedo": "",
+      "normal": "",
+      "emission": "",
+      "paintMask": false
+    },
+    {
+      "sourceName": "AstraLP640_FrontWheel.007",
+      "assetName": "LamboFrontWheel",
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "metallic": 0.2,
+      "smoothness": 0.45,
+      "albedo": "Assets/AstroQuest/Art/DonorTextures/Frount_wheel_LP_Frount_wheel_BaseColor.png",
+      "normal": "Assets/AstroQuest/Art/DonorTextures/Frount_wheel_LP_Frount_wheel_Normal.png",
+      "emission": "Assets/AstroQuest/Art/DonorTextures/Frount_wheel_LP_Frount_wheel_Emissive.png",
+      "paintMask": false
+    },
+    {
+      "sourceName": "AstraLP640_Details.007",
+      "assetName": "LamboDetails",
+      "color": [
+        0.018,
+        0.023,
+        0.029,
+        1
+      ],
+      "metallic": 0.2,
+      "smoothness": 0.45,
+      "albedo": "",
+      "normal": "",
+      "emission": "",
+      "paintMask": false
+    },
+    {
+      "sourceName": "AstraLP640_TailLamp.007",
+      "assetName": "LamboTailLamp",
+      "color": [
+        0.65,
+        0.012,
+        0.007,
+        1
+      ],
+      "metallic": 0.2,
+      "smoothness": 0.45,
+      "albedo": "",
+      "normal": "",
+      "emission": "",
+      "paintMask": false
+    },
+    {
+      "sourceName": "AstraLP640_Carbon.007",
+      "assetName": "LamboCarbon",
+      "color": [
+        0.018,
+        0.023,
+        0.029,
+        1
+      ],
+      "metallic": 0.2,
+      "smoothness": 0.45,
+      "albedo": "",
+      "normal": "",
+      "emission": "",
+      "paintMask": false
+    },
+    {
+      "sourceName": "AstraLP640_ThrusterHousing.007",
+      "assetName": "LamboThrusterHousing",
+      "color": [
+        0.025,
+        0.035,
+        0.045,
+        1
+      ],
+      "metallic": 0.6,
+      "smoothness": 0.65,
+      "albedo": "",
+      "normal": "",
+      "emission": "",
+      "unlit": false
+    },
+    {
+      "sourceName": "AstraLP640_ThrusterRim.007",
+      "assetName": "LamboThrusterRim",
+      "color": [
+        0.32,
+        0.38,
+        0.42,
+        1
+      ],
+      "metallic": 0.85,
+      "smoothness": 0.73,
+      "albedo": "",
+      "normal": "",
+      "emission": "",
+      "unlit": false
+    },
+    {
+      "sourceName": "AstraLP640_ThrusterCore.007",
+      "assetName": "LamboThrusterCore",
+      "color": [
+        0.12,
+        0.75,
+        1,
+        1
+      ],
+      "metallic": 0.2,
+      "smoothness": 0.7,
+      "albedo": "",
+      "normal": "",
+      "emission": "",
+      "unlit": true
+    },
+    {
+      "sourceName": "AstraHD_Rubber.006",
+      "assetName": "LamboHDRubber",
+      "color": [
+        0.017,
+        0.019,
+        0.022,
+        1
+      ],
+      "metallic": 0,
+      "smoothness": 0.17000000000000004,
+      "albedo": "",
+      "normal": "",
+      "emission": "",
+      "unlit": false
+    },
+    {
+      "sourceName": "AstraHD_ForgedAlloy.006",
+      "assetName": "LamboHDForgedAlloy",
+      "color": [
+        0.35,
+        0.39,
+        0.44,
+        1
+      ],
+      "metallic": 0.92,
+      "smoothness": 0.8,
+      "albedo": "",
+      "normal": "",
+      "emission": "",
+      "unlit": false
+    },
+    {
+      "sourceName": "AstraHD_PolishedLip.006",
+      "assetName": "LamboHDPolishedLip",
+      "color": [
+        0.7,
+        0.74,
+        0.78,
+        1
+      ],
+      "metallic": 0.95,
+      "smoothness": 0.87,
+      "albedo": "",
+      "normal": "",
+      "emission": "",
+      "unlit": false
+    },
+    {
+      "sourceName": "AstraHD_SatinCarbon.006",
+      "assetName": "LamboHDSatinCarbon",
+      "color": [
+        0.013,
+        0.019,
+        0.024,
+        1
+      ],
+      "metallic": 0.32,
+      "smoothness": 0.64,
+      "albedo": "",
+      "normal": "",
+      "emission": "",
+      "unlit": false
+    },
+    {
+      "sourceName": "AstraHD_BrakeSteel.006",
+      "assetName": "LamboHDBrakeSteel",
+      "color": [
+        0.31,
+        0.32,
+        0.34,
+        1
+      ],
+      "metallic": 0.85,
+      "smoothness": 0.6,
+      "albedo": "",
+      "normal": "",
+      "emission": "",
+      "unlit": false
+    },
+    {
+      "sourceName": "AstraHD_Caliper.006",
+      "assetName": "LamboHDCaliper",
+      "color": [
+        0.58,
+        0.012,
+        0.009,
+        1
+      ],
+      "metallic": 0.28,
+      "smoothness": 0.72,
+      "albedo": "",
+      "normal": "",
+      "emission": "",
+      "unlit": false
+    },
+    {
+      "sourceName": "AstraHD_SmokedGlass.006",
+      "assetName": "LamboHDSmokedGlass",
+      "color": [
+        0.018,
+        0.03,
+        0.044,
+        1
+      ],
+      "metallic": 0.08,
+      "smoothness": 0.84,
+      "albedo": "",
+      "normal": "",
+      "emission": "",
+      "unlit": false
+    },
+    {
+      "sourceName": "AstraHD_HeadlightLED.006",
+      "assetName": "LamboHDHeadlightLED",
+      "color": [
+        0.78,
+        0.91,
+        1,
+        1
+      ],
+      "metallic": 0,
+      "smoothness": 0.75,
+      "albedo": "",
+      "normal": "",
+      "emission": "",
+      "unlit": true
+    },
+    {
+      "sourceName": "AstraHD_TailLED.006",
+      "assetName": "LamboHDTailLED",
+      "color": [
+        0.85,
+        0.008,
+        0.006,
+        1
+      ],
+      "metallic": 0,
+      "smoothness": 0.8,
+      "albedo": "",
+      "normal": "",
+      "emission": "",
+      "unlit": true
+    },
+    {
+      "sourceName": "AstraHD_ThrusterRing.006",
+      "assetName": "LamboHDThrusterRing",
+      "color": [
+        0.06,
+        0.63,
+        0.88,
+        1
+      ],
+      "metallic": 0.2,
+      "smoothness": 0.75,
+      "albedo": "",
+      "normal": "",
+      "emission": "",
+      "unlit": true
+    },
+    {
+      "sourceName": "AstraHD_PearlPaint.004",
+      "assetName": "LamboBody",
+      "color": [
+        0.95,
+        0.95,
+        0.95,
+        1
+      ],
+      "metallic": 0.24,
+      "smoothness": 0.72,
+      "albedo": "",
+      "normal": "",
+      "emission": "",
+      "unlit": false,
+      "paintMask": true
+    },
+    {
+      "sourceName": "AstraHD_PanelGap.001",
+      "assetName": "LamboHDPanelGap",
+      "color": [
+        0.045,
+        0.052,
+        0.06,
+        1
+      ],
+      "metallic": 0,
+      "smoothness": 0.35,
+      "albedo": "",
+      "normal": "",
+      "emission": "",
+      "unlit": true
+    },
+    {
+      "sourceName": "AstraHD_CoolingBlade.002",
+      "assetName": "LamboHDCoolingBlade",
+      "color": [
+        0.065,
+        0.075,
+        0.09,
+        1
+      ],
+      "metallic": 0.55,
+      "smoothness": 0.62,
+      "albedo": "",
+      "normal": "",
+      "emission": "",
+      "unlit": false
+    },
+    {
+      "sourceName": "AstraHD_GrilleMetal.003",
+      "assetName": "LamboHDGrilleMetal",
+      "color": [
+        0.065,
+        0.076,
+        0.09,
+        1
+      ],
+      "metallic": 0.6,
+      "smoothness": 0.62,
+      "albedo": "",
+      "normal": "",
+      "emission": "",
+      "unlit": false
+    }
+  ],
+  "mounts": [
+    {
+      "name": "FX_RearMain.007",
+      "force": [
+        0,
+        0,
+        1
+      ],
+      "torque": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "FX_NoseBrake.007",
+      "force": [
+        0,
+        0,
+        -1
+      ],
+      "torque": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "FX_LeftTranslate.007",
+      "force": [
+        1,
+        0,
+        0
+      ],
+      "torque": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "FX_RightTranslate.007",
+      "force": [
+        -1,
+        0,
+        0
+      ],
+      "torque": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "FX_RoofTranslate.007",
+      "force": [
+        0,
+        -1,
+        0
+      ],
+      "torque": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "FX_Lift_-1_-1.007",
+      "force": [
+        0,
+        1,
+        0
+      ],
+      "torque": [
+        0.7,
+        0,
+        -0.7
+      ]
+    },
+    {
+      "name": "FX_AttitudeTop_-1_-1.007",
+      "force": [
+        0,
+        -1,
+        0
+      ],
+      "torque": [
+        -0.7,
+        0,
+        0.7
+      ]
+    },
+    {
+      "name": "FX_Yaw_-1_-1.007",
+      "force": [
+        1,
+        0,
+        0
+      ],
+      "torque": [
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "name": "FX_Lift_-1_1.007",
+      "force": [
+        0,
+        1,
+        0
+      ],
+      "torque": [
+        -0.7,
+        0,
+        -0.7
+      ]
+    },
+    {
+      "name": "FX_AttitudeTop_-1_1.007",
+      "force": [
+        0,
+        -1,
+        0
+      ],
+      "torque": [
+        0.7,
+        0,
+        0.7
+      ]
+    },
+    {
+      "name": "FX_Yaw_-1_1.007",
+      "force": [
+        1,
+        0,
+        0
+      ],
+      "torque": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "name": "FX_Lift_1_-1.007",
+      "force": [
+        0,
+        1,
+        0
+      ],
+      "torque": [
+        0.7,
+        0,
+        0.7
+      ]
+    },
+    {
+      "name": "FX_AttitudeTop_1_-1.007",
+      "force": [
+        0,
+        -1,
+        0
+      ],
+      "torque": [
+        -0.7,
+        0,
+        -0.7
+      ]
+    },
+    {
+      "name": "FX_Yaw_1_-1.007",
+      "force": [
+        -1,
+        0,
+        0
+      ],
+      "torque": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "name": "FX_Lift_1_1.007",
+      "force": [
+        0,
+        1,
+        0
+      ],
+      "torque": [
+        -0.7,
+        0,
+        0.7
+      ]
+    },
+    {
+      "name": "FX_AttitudeTop_1_1.007",
+      "force": [
+        0,
+        -1,
+        0
+      ],
+      "torque": [
+        0.7,
+        0,
+        -0.7
+      ]
+    },
+    {
+      "name": "FX_Yaw_1_1.007",
+      "force": [
+        -1,
+        0,
+        0
+      ],
+      "torque": [
+        0,
+        -1,
+        0
+      ]
+    }
+  ],
+  "wheelCenters": {
+    "F_L-wheel": [
+      0.04861558973789215,
+      -0.010597439482808113,
+      0.07225597649812698
+    ],
+    "F_R-wheel": [
+      -0.04862288013100624,
+      -0.010597439482808113,
+      0.07225597649812698
+    ],
+    "R_L-wheel": [
+      0.04934494197368622,
+      -0.010597439482808113,
+      -0.08240362256765366
+    ],
+    "R_R-wheel": [
+      -0.049583107233047485,
+      -0.010597439482808113,
+      -0.08256129920482635
+    ]
+  },
+  "triangles": 254722,
+  "wheels": [
+    {
+      "name": "Wheel_F_L.006",
+      "position": [
+        0.048642199486494064,
+        -0.010597439482808113,
+        0.07225597649812698
+      ],
+      "radius": 0.019902562722563744,
+      "front": true
+    },
+    {
+      "name": "Wheel_F_R.006",
+      "position": [
+        -0.048649489879608154,
+        -0.010597439482808113,
+        0.07225597649812698
+      ],
+      "radius": 0.019902562722563744,
+      "front": true
+    },
+    {
+      "name": "Wheel_R_L.006",
+      "position": [
+        0.05076821148395538,
+        -0.010597439482808113,
+        -0.08240362256765366
+      ],
+      "radius": 0.019902562722563744,
+      "front": false
+    },
+    {
+      "name": "Wheel_R_R.006",
+      "position": [
+        -0.05100637674331665,
+        -0.010597439482808113,
+        -0.08256129920482635
+      ],
+      "radius": 0.019902562722563744,
+      "front": false
+    }
+  ],
+  "quality": "High detail, modelled wheels, lamps and machined nozzles"
+}
