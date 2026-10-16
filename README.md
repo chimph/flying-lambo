@@ -58,9 +58,9 @@ Use **Unity 6000.6.0f1** with **Android Build Support, SDK/NDK and OpenJDK**. Op
 
 See the [development guide](docs/DEVELOPMENT.md) for keyboard controls, command-line builds, the art pipeline and verification details. The existing `AstroQuest` code namespace, asset paths and Android package ID are retained for compatibility with earlier prototypes.
 
-## Prototype status
+## Notes
 
-This is an early playable prototype. All ten physics tests pass, covering inertial flight, launch/landing, stop-and-level, ground driving, pause recovery and landing-pad placement. The high-detail vehicle and fully hidden text mode have passed Editor validation, and an earlier build has launched on Quest 3 with room anchors detected. Interactive checks of controller mappings, visual quality and sustained on-device performance remain in progress.
+Flying Lambo is a small, free game to download and enjoy as-is. All ten physics tests pass, covering inertial flight, launch/landing, stop-and-level, ground driving, pause recovery and landing-pad placement. See the [development guide](docs/DEVELOPMENT.md#verification) for validation details and remaining device checks.
 
 Visual depth occlusion is not implemented: furniture can collide with the car while still being drawn behind it in passthrough. Room geometry comes from the saved scan and does not continuously follow moved objects. Sound, collision damage and landing scores are not implemented.
 
