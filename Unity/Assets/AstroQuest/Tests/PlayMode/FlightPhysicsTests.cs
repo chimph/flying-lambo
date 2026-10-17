@@ -192,6 +192,34 @@ public sealed class FlightPhysicsTests : InputTestFixture
     }
 
     [UnityTest]
+    public IEnumerator LeftStickAirSteeringTurnsBothWaysWithoutChangingWorldMomentum()
+    {
+        var ship = ImportedShip(Vector3.up * 2);
+        ship.attitudeAssist = false;
+        testGamepad = InputSystem.AddDevice<Gamepad>();
+        testGamepad.MakeCurrent();
+        ship.GetComponent<VehicleInput>().enabled = true;
+        ship.Launch();
+        yield return Steps(2);
+
+        Vector3 drift = new Vector3(0, 0.1f, 0.3f);
+        foreach (float direction in new[] { 1f, -1f })
+        {
+            ship.Body.rotation = Quaternion.identity;
+            ship.Body.angularVelocity = Vector3.zero;
+            ship.Body.linearVelocity = drift;
+            SetGamepadState(new GamepadState { leftStick = new Vector2(direction, 0) });
+            yield return null;
+            yield return Steps(30);
+            Assert.That(ship.transform.forward.x * direction, Is.GreaterThan(0.03f),
+                "Left-stick steering must turn the physical vehicle in the requested direction.");
+            Assert.That(ship.Command.Translation.x, Is.Zero, "Air steering must not command sideways thrust.");
+            Assert.That(Vector3.Distance(ship.Body.linearVelocity, drift), Is.LessThan(0.015f),
+                "Yaw thrusters must preserve the car's existing world-space drift.");
+        }
+    }
+
+    [UnityTest]
     public IEnumerator PullingBackOnGamepadRaisesTheNoseAndPushingForwardLowersIt()
     {
         var ship = ImportedShip(Vector3.up * 2);

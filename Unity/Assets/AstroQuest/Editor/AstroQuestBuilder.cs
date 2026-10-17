@@ -76,7 +76,7 @@ public static class AstroQuestBuilder
         PlayerSettings.companyName = "Flying Lambo";
         PlayerSettings.productName = "Flying Lambo";
         PlayerSettings.bundleVersion = "0.1.0";
-        PlayerSettings.Android.bundleVersionCode = 2;
+        PlayerSettings.Android.bundleVersionCode = 3;
         PlayerSettings.SetApplicationIdentifier(NamedBuildTarget.Android, "com.astroquest.prototype");
         PlayerSettings.SetScriptingBackend(NamedBuildTarget.Android, ScriptingImplementation.IL2CPP);
         PlayerSettings.Android.targetArchitectures = AndroidArchitecture.ARM64;

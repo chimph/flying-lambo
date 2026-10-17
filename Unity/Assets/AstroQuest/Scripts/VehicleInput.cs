@@ -32,9 +32,9 @@ namespace AstroQuest
             {
                 Vector2 move = pad.leftStick.ReadValue();
                 Vector2 turn = pad.rightStick.ReadValue();
-                command.Translation = new Vector3(move.x, move.y,
+                command.Translation = new Vector3(0, move.y,
                     pad.rightTrigger.ReadValue() - pad.leftTrigger.ReadValue());
-                command.Rotation = new Vector3(turn.y, turn.x,
+                command.Rotation = new Vector3(turn.y, Mathf.Clamp(move.x + turn.x, -1, 1),
                     (pad.leftShoulder.isPressed ? 1 : 0) - (pad.rightShoulder.isPressed ? 1 : 0));
                 command.Throttle = pad.rightTrigger.ReadValue();
                 command.GroundBrake = pad.leftTrigger.ReadValue();

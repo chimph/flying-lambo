@@ -31,7 +31,7 @@ The car is about **27 cm long**, with pearl-white paint, detailed wheels and bra
 
 | Control | On the ground | In flight |
 | --- | --- | --- |
-| Left stick | Steer | Sideways and up/down thrust |
+| Left stick | Steer | Steer (yaw) and up/down thrust |
 | Right stick | — | Pitch and yaw; pull back for nose-up |
 | RT | Accelerate | Forward thrust |
 | LT | Brake, then reverse | Counter-thrust, then reverse |
@@ -60,7 +60,7 @@ See the [development guide](docs/DEVELOPMENT.md) for keyboard controls, command-
 
 ## Notes
 
-Flying Lambo is a small, free game to download and enjoy as-is. All twelve Play Mode tests pass, covering inertial flight, launch/landing, stop-and-level, ground driving, pause recovery and landing-pad placement. See the [development guide](docs/DEVELOPMENT.md#verification) for validation details and remaining device checks.
+Flying Lambo is a small, free game to download and enjoy as-is. All thirteen Play Mode tests pass, covering inertial flight, launch/landing, stop-and-level, ground driving, gamepad controls, pause recovery and landing-pad placement. See the [development guide](docs/DEVELOPMENT.md#verification) for validation details and remaining device checks.
 
 Visual depth occlusion is not implemented: furniture can collide with the car while still being drawn behind it in passthrough. Room geometry comes from the saved scan and does not continuously follow moved objects. Sound, collision damage and landing scores are not implemented.
 
