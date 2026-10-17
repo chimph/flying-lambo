@@ -32,9 +32,9 @@ namespace AstroQuest
             {
                 Vector2 move = pad.leftStick.ReadValue();
                 Vector2 turn = pad.rightStick.ReadValue();
-                command.Translation = new Vector3(move.x,
-                    pad.rightTrigger.ReadValue() - pad.leftTrigger.ReadValue(), move.y);
-                command.Rotation = new Vector3(-turn.y, turn.x,
+                command.Translation = new Vector3(move.x, move.y,
+                    pad.rightTrigger.ReadValue() - pad.leftTrigger.ReadValue());
+                command.Rotation = new Vector3(turn.y, turn.x,
                     (pad.leftShoulder.isPressed ? 1 : 0) - (pad.rightShoulder.isPressed ? 1 : 0));
                 command.Throttle = pad.rightTrigger.ReadValue();
                 command.GroundBrake = pad.leftTrigger.ReadValue();
@@ -53,7 +53,7 @@ namespace AstroQuest
                 command.Translation = new Vector3(Axis(keyboard.dKey.isPressed, keyboard.aKey.isPressed),
                     Axis(keyboard.eKey.isPressed, keyboard.qKey.isPressed),
                     Axis(keyboard.wKey.isPressed, keyboard.sKey.isPressed));
-                command.Rotation = new Vector3(Axis(keyboard.downArrowKey.isPressed, keyboard.upArrowKey.isPressed),
+                command.Rotation = new Vector3(Axis(keyboard.upArrowKey.isPressed, keyboard.downArrowKey.isPressed),
                     Axis(keyboard.rightArrowKey.isPressed, keyboard.leftArrowKey.isPressed),
                     Axis(keyboard.zKey.isPressed, keyboard.cKey.isPressed));
                 command.Brake = keyboard.leftShiftKey.isPressed;
@@ -73,7 +73,7 @@ namespace AstroQuest
             {
                 vehicle.Command = default;
                 vehicle.SetPaused(true);
-                Notice = "Pair your Xbox controller, then press Menu to resume";
+                Notice = "Pair your gamepad, then press Menu to resume";
                 return;
             }
             if (pause) vehicle.SetPaused(!vehicle.Paused);
@@ -111,7 +111,7 @@ namespace AstroQuest
                 Notice = "Reset · Y / Space to launch";
                 return true;
             }
-            Notice = "Reset blocked: clear the launch pad or reload the room";
+            Notice = "Reset blocked: clear the launch area or reload the room";
             return false;
         }
 

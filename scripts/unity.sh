@@ -19,7 +19,7 @@ case "${1:-help}" in
     ;;
   test)
     exec "$astro_editor" -batchmode -nographics -projectPath "$astro_project" \
-      -runTests -testPlatform PlayMode -testResults "$astro_root/flight-test-results.xml" \
+      -runTests -testPlatform PlayMode -assemblyNames AstroQuest.PlayModeTests -testResults "$astro_root/flight-test-results.xml" \
       -logFile "$astro_project/Logs/tests.log"
     ;;
   preview)

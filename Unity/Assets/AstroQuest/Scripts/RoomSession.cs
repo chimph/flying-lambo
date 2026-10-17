@@ -16,7 +16,6 @@ namespace AstroQuest
         public VehicleInput input;
         public FlightHud hud;
         public Transform viewer;
-        public Transform launchPad;
         public Transform targetPad;
         public Transform spawnPoint;
         public Material debugMaterial;
@@ -48,7 +47,6 @@ namespace AstroQuest
             if (loading || roomKit == null) return;
             loading = true;
             vehicle.gameObject.SetActive(false);
-            launchPad.gameObject.SetActive(false);
             targetPad.gameObject.SetActive(false);
             hud.roomStatus = "LOADING YOUR ROOM…";
             try
@@ -108,8 +106,6 @@ namespace AstroQuest
                     hud.roomStatus = "NO CLEAR LAUNCH SURFACE · MOVE NEAR A CLEAR AREA · DPAD UP";
                     return;
                 }
-                launchPad.SetPositionAndRotation(launch.position, launch.rotation);
-                launchPad.gameObject.SetActive(true);
                 spawnPoint.SetPositionAndRotation(launch.position + Vector3.up * 0.05f, launch.rotation);
                 vehicle.gameObject.SetActive(true);
                 vehicle.ResetAt(spawnPoint.position, spawnPoint.rotation);

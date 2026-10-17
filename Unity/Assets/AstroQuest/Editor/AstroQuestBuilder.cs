@@ -76,6 +76,7 @@ public static class AstroQuestBuilder
         PlayerSettings.companyName = "Flying Lambo";
         PlayerSettings.productName = "Flying Lambo";
         PlayerSettings.bundleVersion = "0.1.0";
+        PlayerSettings.Android.bundleVersionCode = 2;
         PlayerSettings.SetApplicationIdentifier(NamedBuildTarget.Android, "com.astroquest.prototype");
         PlayerSettings.SetScriptingBackend(NamedBuildTarget.Android, ScriptingImplementation.IL2CPP);
         PlayerSettings.Android.targetArchitectures = AndroidArchitecture.ARM64;
@@ -320,12 +321,10 @@ public static class AstroQuestBuilder
             input.modelSourceUrl = donor.sourceUrl;
             input.modelLicenseUrl = donor.licenseUrl;
         }
-        var launch = CreatePad("Launch pad", "01", vehicle);
-        var target = CreatePad("Target pad", "02", vehicle);
-        launch.position = new Vector3(-0.4f, 0.016f, -0.35f);
+        var target = CreatePad("Target pad", "01", vehicle);
         target.position = new Vector3(0.7f, 0.748f, 0.55f);
         var spawn = new GameObject("Validated spawn point").transform;
-        spawn.position = launch.position + Vector3.up * 0.05f;
+        spawn.position = new Vector3(-0.4f, 0.066f, -0.35f);
         vehicle.transform.position = spawn.position;
         input.resetPoint = spawn;
         var hud = CreateHud(viewer, vehicle, input);
@@ -344,13 +343,11 @@ public static class AstroQuestBuilder
             session.vehicle = vehicle;
             session.input = input;
             session.viewer = viewer;
-            session.launchPad = launch;
             session.targetPad = target;
             session.spawnPoint = spawn;
             session.hud = hud;
             session.debugMaterial = Material("RoomDebug", new Color(0.2f, 0.7f, 0.8f), true);
             vehicle.gameObject.SetActive(false);
-            launch.gameObject.SetActive(false);
             target.gameObject.SetActive(false);
             hud.roomStatus = "LOADING YOUR ROOM…";
         }

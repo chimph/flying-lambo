@@ -68,7 +68,7 @@ namespace AstroQuest
             readout.text = "F L Y I N G   L A M B O\n" + roomStatus + "\n\n" + state +
                 $"\n{vehicle.Body.linearVelocity.magnitude:0.00} m/s    LANDINGS {vehicle.SuccessfulLandings}" +
                 $"\nATTITUDE ASSIST {(vehicle.attitudeAssist ? "ON" : "OFF")} · B TO TOGGLE" +
-                (airborne ? "\nLS MOVE   RS TURN   LT/RT DOWN/UP   LB/RB ROLL\nA / H STOP + LEVEL · MOVE TO CANCEL" :
+                (airborne ? "\nRT/LT FORWARD/REVERSE   LS SIDEWAYS + UP/DOWN\nRS PITCH/YAW · PULL BACK NOSE UP   LB/RB ROLL\nA / H STOP + LEVEL · MOVE TO CANCEL" :
                     "\nRT / W ACCELERATE   LT / S BRAKE + REVERSE\nLS / A-D STEER   A / SHIFT HANDBRAKE") +
                 "\nHOLD X / R RESET   MENU / ESC PAUSE" +
                 "\nY / SPACE LAUNCH   VIEW / F1 HIDE HELP" +

@@ -25,16 +25,16 @@ The car is about **27 cm long**, with pearl-white paint, detailed wheels and bra
 2. Download `FlyingLambo.apk` from the release above. Install it with Meta Quest Developer Hub or `adb install -r FlyingLambo.apk`.
 3. Pair an Xbox controller to the headset over Bluetooth.
 4. Complete the headset's room setup, including the furniture you want to use. Launch **Flying Lambo** from Unknown Sources and allow spatial-data access.
-5. The car starts on a clear surface in front of you. Drive with the triggers and left stick, or press **Y** to launch. Press **Menu** to resume after a system dialog if needed.
+5. The car starts directly on a clear surface in front of you, with no automatic launch pad. Drive with the triggers and left stick, or press **Y** to launch. Press **Menu** to resume after a system dialog if needed.
 
 ### Xbox controls
 
 | Control | On the ground | In flight |
 | --- | --- | --- |
-| Left stick | Steer | Forward/backward and sideways thrust |
-| Right stick | — | Pitch and yaw |
-| RT | Accelerate | Upward thrust |
-| LT | Brake, then reverse | Downward thrust |
+| Left stick | Steer | Sideways and up/down thrust |
+| Right stick | — | Pitch and yaw; pull back for nose-up |
+| RT | Accelerate | Forward thrust |
+| LT | Brake, then reverse | Counter-thrust, then reverse |
 | LB / RB | — | Roll |
 | A | Hold for handbrake | Toggle stop, level and position hold |
 | B | Toggle spin damping | Toggle spin damping |
@@ -60,7 +60,7 @@ See the [development guide](docs/DEVELOPMENT.md) for keyboard controls, command-
 
 ## Notes
 
-Flying Lambo is a small, free game to download and enjoy as-is. All ten physics tests pass, covering inertial flight, launch/landing, stop-and-level, ground driving, pause recovery and landing-pad placement. See the [development guide](docs/DEVELOPMENT.md#verification) for validation details and remaining device checks.
+Flying Lambo is a small, free game to download and enjoy as-is. All twelve Play Mode tests pass, covering inertial flight, launch/landing, stop-and-level, ground driving, pause recovery and landing-pad placement. See the [development guide](docs/DEVELOPMENT.md#verification) for validation details and remaining device checks.
 
 Visual depth occlusion is not implemented: furniture can collide with the car while still being drawn behind it in passthrough. Room geometry comes from the saved scan and does not continuously follow moved objects. Sound, collision damage and landing scores are not implemented.
 

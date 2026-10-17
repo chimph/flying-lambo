@@ -11,7 +11,7 @@ Open `Unity` in Unity Hub. Package versions and the Meta XR registry are pinned 
 
 ## Editor play
 
-Open `Assets/AstroQuest/Scenes/TestRoom.unity`, press Play, and focus the Game view. The car starts on the floor pad; another pad is on a table. Connect a gamepad or use these keyboard controls:
+Open `Assets/AstroQuest/Scenes/TestRoom.unity`, press Play, and focus the Game view. The car starts directly on the floor; the optional target pad is on a table. There is no automatic floor launch pad. Connect a gamepad or use these keyboard controls:
 
 | Keyboard | Action |
 | --- | --- |
@@ -19,7 +19,8 @@ Open `Assets/AstroQuest/Scenes/TestRoom.unity`, press Play, and focus the Game v
 | W / S | Forward/backward thrust; accelerate/brake then reverse on the ground |
 | A / D | Sideways thrust; steer on the ground |
 | Q / E | Down/up thrust |
-| Arrow keys | Pitch/yaw |
+| Down / Up arrows | Pitch nose-up / nose-down |
+| Left / Right arrows | Yaw |
 | Z / C | Roll |
 | H | Toggle stop-and-level with position hold |
 | Hold left Shift | Counter-thrust brake in flight; handbrake on the ground |
@@ -57,7 +58,7 @@ The Android package ID remains `com.astroquest.prototype` so the renamed app upd
 
 ## Room setup
 
-Pair the Xbox controller in the headset's Bluetooth settings. Launch Flying Lambo from Unknown Sources, allow spatial-data access, and complete room setup if prompted. Press Menu to resume if a system dialog paused the game. The game finds a clear, horizontal launch surface in front of the viewer. Y launches the car.
+Pair the Xbox controller in the headset's Bluetooth settings. Launch Flying Lambo from Unknown Sources, allow spatial-data access, and complete room setup if prompted. Press Menu to resume if a system dialog paused the game. The game finds a clear, horizontal launch surface in front of the viewer and places the car directly on it, without adding a pad. Y launches the car. In flight, RT/LT provide forward/reverse thrust, the left stick provides sideways/up/down thrust, and pulling back on the right stick raises the nose.
 
 Optional hand tracking allows Horizon to launch the app while Touch controllers are asleep. Hand gestures do not control the car. Controller loss or application focus loss pauses the vehicle and clears thrust.
 
@@ -98,8 +99,8 @@ The earlier `AstraLP640.blend` conversion and original `AstraWedge.blend` placeh
 
 ## Verification
 
-Run the Play Mode suite under `Assets/AstroQuest/Tests/PlayMode`. Its ten tests exercise inertial coasting, momentum after rotation, finite braking, launch/landing transitions, pause recovery, rejected landings, pad clearance, imported wheel contacts, physical stop-and-level/manual cancellation, and ground acceleration/braking/steering/reverse/launch. CLI results go to ignored `flight-test-results.xml`; logs go to ignored `Unity/Logs`.
+Run the Play Mode suite under `Assets/AstroQuest/Tests/PlayMode`. Its twelve tests exercise inertial coasting, momentum after rotation, finite braking, launch/landing transitions, pause recovery, rejected landings, pad clearance, imported wheel contacts, physical stop-and-level/manual cancellation, ground acceleration/braking/steering/reverse/launch, and actual gamepad trigger/vertical-thrust and pull-back-to-pitch-up behavior. CLI results go to ignored `flight-test-results.xml`; logs go to ignored `Unity/Logs`.
 
 The build validates vehicle scale, white paint, triangle count, shader compilation and nozzle count. `AstroQuestBuilder.GenerateAndCaptureVehiclePreviews` renders the vehicle and test room, and checks that hiding text leaves zero visible text renderers across active, paused and room-unavailable states, then restores them. All quality tiers and runtime startup enforce 4× MSAA and full texture resolution.
 
-All ten physics tests passed again after the Flying Lambo rename on 17 October 2026. The preceding prototype was installed and launched on Quest 3 on the same date. Its startup confirmed 4× MSAA and detected four room anchors. Interactive checks remain for controller mappings/reconnect, passthrough appearance, room permission/reload behavior, furniture collisions and landings, text hiding, flight hold, and sustained frame rate/thermals. Sound, collision damage and strict landing scoring are not implemented.
+All twelve Play Mode tests passed on 18 October 2026 after removing the automatic floor pad and updating the gamepad controls. The input tests verify RT/LT forward/reverse flight without lift, left-stick vertical thrust, and pull-back nose-up motion on the imported vehicle. The preceding build was installed and launched on Quest 3 on 17 October 2026. Its startup confirmed 4× MSAA and detected four room anchors. Interactive checks remain for controller mappings/reconnect, passthrough appearance, room permission/reload behavior, furniture collisions and landings, text hiding, flight hold, and sustained frame rate/thermals. Sound, collision damage and strict landing scoring are not implemented.

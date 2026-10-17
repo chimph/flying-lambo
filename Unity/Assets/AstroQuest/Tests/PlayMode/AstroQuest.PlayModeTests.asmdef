@@ -1,6 +1,6 @@
 {
   "name": "AstroQuest.PlayModeTests",
-  "references": ["AstroQuest"],
+  "references": ["AstroQuest", "Unity.InputSystem", "Unity.InputSystem.TestFramework"],
   "optionalUnityReferences": ["TestAssemblies"],
   "defineConstraints": ["UNITY_INCLUDE_TESTS"]
 }

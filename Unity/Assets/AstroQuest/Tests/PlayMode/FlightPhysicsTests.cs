@@ -3,11 +3,14 @@ using System.Collections.Generic;
 using AstroQuest;
 using NUnit.Framework;
 using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.LowLevel;
 using UnityEngine.TestTools;
 
-public sealed class FlightPhysicsTests
+public sealed class FlightPhysicsTests : InputTestFixture
 {
     readonly List<GameObject> objects = new();
+    Gamepad testGamepad;
 
     ThrusterVehicle Ship(Vector3 position)
     {
@@ -43,6 +46,16 @@ public sealed class FlightPhysicsTests
         foreach (var obj in objects) Object.Destroy(obj);
         objects.Clear();
         yield return null;
+    }
+
+    public override void TearDown()
+    {
+        if (testGamepad != null)
+        {
+            if (testGamepad.added) InputSystem.RemoveDevice(testGamepad);
+            testGamepad = null;
+        }
+        base.TearDown();
     }
 
     [UnityTest]
@@ -115,6 +128,12 @@ public sealed class FlightPhysicsTests
     }
 
 #if UNITY_EDITOR
+    void SetGamepadState(GamepadState state)
+    {
+        InputSystem.QueueStateEvent(testGamepad, state);
+        InputSystem.Update();
+    }
+
     ThrusterVehicle ImportedShip(Vector3 position)
     {
         var prefab = UnityEditor.AssetDatabase.LoadAssetAtPath<GameObject>(
@@ -125,6 +144,74 @@ public sealed class FlightPhysicsTests
         var ship = instance.GetComponent<ThrusterVehicle>();
         ship.SetPaused(false);
         return ship;
+    }
+
+    [UnityTest]
+    public IEnumerator GamepadTriggersDriveAndThrustForwardAndReverseWithoutLift()
+    {
+        Surface(new Vector3(6, 0.1f, 6));
+        var ship = ImportedShip(Vector3.up * 0.05f);
+        ship.attitudeAssist = false;
+        testGamepad = InputSystem.AddDevice<Gamepad>();
+        testGamepad.MakeCurrent();
+        ship.GetComponent<VehicleInput>().enabled = true;
+        SetGamepadState(new GamepadState());
+        yield return null;
+        yield return Steps(90);
+        Assert.That(ship.State, Is.EqualTo(ThrusterVehicle.FlightState.Grounded));
+
+        SetGamepadState(new GamepadState { rightTrigger = 1 });
+        yield return null;
+        yield return Steps(30);
+        Assert.That(Vector3.Dot(ship.Body.linearVelocity, ship.transform.forward), Is.GreaterThan(0.1f));
+
+        SetGamepadState(new GamepadState());
+        yield return null;
+        ship.ResetAt(Vector3.up * 2, Quaternion.identity);
+        ship.Launch();
+        yield return Steps(2);
+        ship.Body.linearVelocity = Vector3.zero;
+        SetGamepadState(new GamepadState { rightTrigger = 1 });
+        yield return null;
+        yield return Steps(30);
+        Assert.That(ship.Body.linearVelocity.z, Is.GreaterThan(0.1f), "RT must thrust forward in flight.");
+        Assert.That(Mathf.Abs(ship.Body.linearVelocity.y), Is.LessThan(0.03f), "RT must not provide lift.");
+
+        SetGamepadState(new GamepadState { leftTrigger = 1 });
+        yield return null;
+        yield return Steps(80);
+        Assert.That(ship.Body.linearVelocity.z, Is.LessThan(-0.08f), "LT must brake and then thrust backward.");
+        Assert.That(Mathf.Abs(ship.Body.linearVelocity.y), Is.LessThan(0.03f), "LT must not lower the car.");
+
+        SetGamepadState(new GamepadState { leftStick = Vector2.up });
+        yield return null;
+        ship.Body.linearVelocity = Vector3.zero;
+        yield return Steps(30);
+        Assert.That(ship.Body.linearVelocity.y, Is.GreaterThan(0.1f), "The left stick must retain vertical thrust.");
+        Assert.That(Mathf.Abs(ship.Body.linearVelocity.z), Is.LessThan(0.03f));
+    }
+
+    [UnityTest]
+    public IEnumerator PullingBackOnGamepadRaisesTheNoseAndPushingForwardLowersIt()
+    {
+        var ship = ImportedShip(Vector3.up * 2);
+        ship.attitudeAssist = false;
+        testGamepad = InputSystem.AddDevice<Gamepad>();
+        testGamepad.MakeCurrent();
+        ship.GetComponent<VehicleInput>().enabled = true;
+        ship.Launch();
+
+        SetGamepadState(new GamepadState { rightStick = Vector2.down });
+        yield return null;
+        yield return Steps(30);
+        Assert.That(ship.transform.forward.y, Is.GreaterThan(0.03f), "Pulling back must pitch the physical vehicle nose-up.");
+
+        ship.Body.rotation = Quaternion.identity;
+        ship.Body.angularVelocity = Vector3.zero;
+        SetGamepadState(new GamepadState { rightStick = Vector2.up });
+        yield return null;
+        yield return Steps(30);
+        Assert.That(ship.transform.forward.y, Is.LessThan(-0.03f), "Pushing forward must pitch nose-down.");
     }
 
     [UnityTest]
